@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+<script type="text/javascript" src="packages/cssanimation-gsap.js"></script>
+<script src="js/main page.js"></script>
+
+<link rel="stylesheet" href="css/main page.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="packages/icofont/icofont.min.css">
+<link rel="stylesheet" href="packages/normalize.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <title>main page</title>
+</head>
+
+<body>
+    <!--pre loader-->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!--pre loader end-->
+    <!--slider header-->
+    <div id="slider_header">
+        <div class="fade_zoom_animate_slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 kenburns-top" src="img/header slide1.jpg" alt="First slide">
+                        <div class="slider_caption1 carousel-caption">
+                            <h3 class="little_header animate__animated animate__fadeInRight">what trending</h3>
+                            <h1 class="main_header animate__animated animate__fadeInRight">lookbook fashion</h1>
+                            <p class=" animate__animated animate__fadeInLeft">.2015 - 2016.</p>
+                            <div class="view_btn animate__animated animate__fadeInLeft">
+                                <a href="#">
+                                    <span>view now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 kenburns-top" src="img/header slide2.jpg" alt="Second slide">
+                        <div class="slider_caption2 carousel-caption">
+                            <h3 class="little_header animate__animated animate__fadeInRight">new arrival</h3>
+                            <h1 class="main_header animate__animated animate__fadeInRight">vintage ragle</h1>
+                            <p class="caption_offer animate__animated animate__fadeInLeft">only<span class="caption_offer_amount">60$</span></p>
+                            <div class="shop_now_btn animate__animated animate__fadeInLeft">
+                                <a href="#">
+                                    <span>shop now</span>
+                                </a>
+                            </div>
+                            <div class="learn_more_btn animate__animated animate__fadeInLeft">
+                                <a href="#">
+                                    <span>learn more</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 kenburns-top" src="img/header slide3.jpg" alt="Third slide">
+                        <div class="slider_caption3 carousel-caption">
+                            <h3 class="little_header animate__animated animate__fadeInRight">women style</h3>
+                            <h1 class="main_header animate__animated animate__fadeInRight">new collection</h1>
+                            <p class=" animate__animated animate__fadeInLeft">sale up to 50%</p>
+                            <div class="shop_now_btn animate__animated animate__fadeInLeft">
+                                <a href="#">
+                                    <span>shop now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!--info nav-->
+        <div id="info_nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 text-lg-center col-md-12 text-md-center text-sm-center text-center  col-sm-12 col-12 right_cell">
+                        <span>free shipping on all orders over<i class="icofont-dollar">49</i></span>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 text-lg-center col-md-12 text-md-center col-sm-12 col-12 left_cell">
+                        <span>language</span>
+                        <span>my account</span>
+                        <span>wishlist</span>
+                        <span><i class="icofont-login"></i>login</span>
+                        <span><i class="icofont-key"></i>register</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--info nav end-->
+        <!--logo-->
+        <div id="header_logo">
+            <a href="#">
+                <img src="img/header logo.png" alt="logo">
+            </a>
+        </div>
+        <!--logo end-->
+        <!--main rsp navbar-->
+        <div id="rsp_navbar">
+            <div class="close_mark_box">
+                <i class="icofont-close-squared-alt"></i>
+            </div>
+            <ul class="rsp_nav_titles">
+                <!--rsp home-->
+                <li id="rsp_home" class="rsp_titles">
+                    <a class="rsp_main_titles" href="#">home</a>
+                    <div>
+                        <ul class="rsp_single_sub_titles rsp_home_subtitle ">
+                            <li><a href="#">home classic</a></li>
+                            <li><a href="#">home lookbooks</a></li>
+                            <li><a href="#">home parallax</a></li>
+                            <li><a href="#">home v5</a></li>
+                            <li><a href="#">home v6</a></li>
+                            <li><a href="#">home v7</a></li>
+                            <li><a href="#">home v8</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--rsp home end-->
+                <!--rsp woman-->
+                <li id="rsp_women" class="rsp_titles">
+                    <a class="rsp_main_titles" href="#">women</a>
+                    <div class="rsp_subtitle_with_cols rsp_women_subtitle">
+                        <ul class="rsp_woman_cols">
+                            <li>
+                                <p class="rsp_women_cols_header">women</p>
+                            </li>
+                            <li><a href="#">dresses</a></li>
+                            <li><a href="#">shorts</a></li>
+                            <li><a href="#">accessories</a></li>
+                        </ul>
+                        <ul class="rsp_woman_cols">
+                            <li>
+                                <p class="rsp_women_cols_header">top rated product</p>
+                            </li>
+                            <li>
+                                <!--first-->
+                                <img src="img/D Black Jacket - Young.jpg" alt="D Black Jacket - Young">
+                                <p class="rsp_name">D Black Jacket - Young</p>
+                                <div class="rsp_star">
+                                    <ul>
+                                        <li><i class="icofont-ui-rate-blank"></i></li>
+                                        <li><i class="icofont-ui-rate-blank"></i></li>
+                                        <li><i class="icofont-ui-rate-blank"></i></li>
+                                        <li><i class="icofont-ui-rate-blank"></i></li>
+                                        <li><i class="icofont-ui-rate-blank"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="rsp_price_box">
+                                    <p class="rsp_price">$45</p>
+                                </div>
+                                <!--first end-->
+                                <!--second-->
+                                <img src="img/pink hat.jpg" alt="pink hat">
+                                <p class="rsp_name">pink hat</p>
+                                <div class="rsp_price_box">
+                                    <del class="rsp_price_without_discount">
+                                        <p>$15</p>
+                                    </del>
+                                    <p class="rsp_price">$10</p>
+                                </div>
+                                <!--second end-->
+                                <!--third-->
+                                <img src="img/gray jacket.jpg" alt="gray jacket">
+                                <p class="rsp_name">gray jacket</p>
+                                <div class="rsp_price_box">
+                                    <p class="rsp_price">$85</p>
+                                </div>
+                                <!--third end-->
+                            </li>
+                        </ul>
+                        <ul class="rsp_woman_cols">
+                            <li>
+                                <p class="rsp_women_cols_header">sale products</p>
+                            </li>
+                            <li>
+                                <!--first-->
+                                <img src="img/Eyelash Lace Kimono.jpg" alt="Eyelash Lace Kimono">
+                                <p class="rsp_name">Eyelash Lace Kimono</p>
+                                <div class="rsp_price_box">
+                                    <del class="rsp_price_without_discount">
+                                        <p>$169</p>
+                                    </del>
+                                    <p class="rsp_price">$155</p>
+                                </div>
+                                <!--first end-->
+                                <!--second-->
+                                <img src="img/BrandMarled Sweater.jpg" alt="BrandMarled Sweater">
+                                <p class="rsp_name">BrandMarled Sweater</p>
+                                <div class="rsp_price_box">
+                                    <del class="rsp_price_without_discount">
+                                        <p>$169</p>
+                                    </del>
+                                    <p class="rsp_price">$155</p>
+                                </div>
+                                <!--second end-->
+                                <!--third-->
+                                <img src="img/Modern Fit Blue.jpg" alt="Modern Fit Blue">
+                                <p class="rsp_name">Modern Fit Blue</p>
+                                <div class="rsp_price_box">
+                                    <del class="rsp_price_without_discount">
+                                        <p>$169</p>
+                                    </del>
+                                    <p class="rsp_price">$155</p>
+                                </div>
+                                <!--third end-->
+                            </li>
+                        </ul>
+                        <ul class="rsp_woman_cols">
+                            <li>
+                                <p class="rsp_women_cols_header">featured products</p>
+                            </li>
+                            <li>
+                                <!--first-->
+                                <img src="img/Floral Mock Neck Top.jpg" alt="Floral Mock Neck Top">
+                                <p class="rsp_name">Floral Mock Neck Top</p>
+                                <div class="rsp_price_box">
+                                    <p class="rsp_price">$99</p>
+                                </div>
+                                <!--first end-->
+                                <!--second-->
+                                <img src="img/Eyelash Lace Kimono.jpg" alt="Eyelash Lace Kimono">
+                                <p class="rsp_name">Eyelash Lace Kimono</p>
+                                <div class="rsp_price_box">
+                                    <del class="rsp_price_without_discount">
+                                        <p>$169</p>
+                                    </del>
+                                    <p class="rsp_price">$155</p>
+                                </div>
+                                <!--second end-->
+                                <!--third-->
+                                <img src="img/BrandMarled Sweater.jpg" alt="BrandMarled Sweater">
+                                <p class="rsp_name">BrandMarled Sweater</p>
+                                <div class="rsp_price_box">
+                                    <del class="rsp_price_without_discount">
+                                        <p>$169</p>
+                                    </del>
+                                    <p class="rsp_price">$155</p>
+                                </div>
+                                <!--third end-->
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--rsp woman end-->
+                <!--rsp categories-->
+                <li id="rsp_categories" class="rsp_titles">
+                    <a class="rsp_main_titles" href="#">categories</a>
+                    <div>
+                        <ul class="rsp_single_sub_titles rsp_categories_subtitle">
+                            <li><a href="#">new arrivals</a></li>
+                            <li><a href="#">woman</a></li>
+                            <li><a href="#">best selling</a></li>
+                            <li><a href="#">man</a></li>
+                            <li><a href="#">sales</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--rsp categories end-->
+                <!--rsp shop-->
+                <li id="rsp_shop" class="rsp_titles">
+                    <a class="rsp_main_titles" href="#">shop</a>
+                    <div class="rsp_subtitle_with_cols rsp_shop_subtitle">
+                        <ul class="rsp_shop_cols">
+                            <li>
+                                <img src="img/shop subtitle img.png" alt="red dress">
+                            </li>
+                        </ul>
+                        <ul class="rsp_shop_cols">
+                            <li>
+                                <p class="rsp_shop_cols_header">product pages</p>
+                            </li>
+                            <li><a href="#">product detail</a></li>
+                            <li><a href="#">product list</a></li>
+                            <li><a href="#">product grid</a></li>
+                            <li><a href="#">product grid 4 columns</a></li>
+                        </ul>
+                        <ul class="rsp_shop_cols">
+                            <li>
+                                <p class="rsp_shop_cols_header">other pages</p>
+                            </li>
+                            <li><a href="#">cart</a></li>
+                            <li><a href="#">empty cart</a></li>
+                            <li><a href="#">my account</a></li>
+                            <li><a href="#">wishlist</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--rsp shop end-->
+                <!--rsp blog-->
+                <li id="rsp_blog" class="rsp_titles">
+                    <a class="rsp_main_titles" href="#">blog</a>
+                    <div>
+                        <ul class="rsp_single_sub_titles rsp_blog_subtitle">
+                            <li><a href="#">blog-list</a></li>
+                            <li><a href="#">blog-grid</a></li>
+                            <li><a href="#">blog-masonry</a></li>
+                            <li><a href="#">blog-timeline</a></li>
+                            <li><a href="#">blog detail-slider</a></li>
+                            <li><a href="#">blog detail-image</a></li>
+                            <li><a href="#">blog detail-audio</a></li>
+                            <li><a href="#">blog detail-video</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--rsp blog end-->
+                <!--rsp pages-->
+                <li id="rsp_pages" class="rsp_titles">
+                    <a class="rsp_main_titles" href="#">pages</a>
+                    <div>
+                        <ul class="rsp_single_sub_titles rsp_pages_subtitle">
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">contact us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!--rsp pages end-->
+            </ul>
+        </div>
+        <!--main rsp navbar end-->
+        <!--main navbar-->
+        <div id="main_navbar">
+            <div>
+                <nav>
+                    <ul class="nav_titles">
+                        <!--rsp menu icon-->
+                        <li class="rsp_menu_icon_box">
+                            <a href="#"><i class="icofont-navigation-menu"></i></a>
+                        </li>
+                        <!--rsp menu icon end-->
+                        <!--fixed logo on scroll down-->
+                        <li class="fixed_logo">
+                            <a href="#">
+                                <img src="img/logo-fixed.png">
+                            </a>
+                        </li>
+                        <!--fixed logo on scroll down end-->
+                        <!--home-->
+                        <li id="home" class="titles">
+                            <a href="#">home</a>
+                            <div class="single_sub_titles_box">
+                                <ul class="single_sub_titles home_subtitle">
+                                    <li><a href="#">home classic</a></li>
+                                    <li><a href="#">home lookbooks</a></li>
+                                    <li><a href="#">home parallax</a></li>
+                                    <li><a href="#">home v5</a></li>
+                                    <li><a href="#">home v6</a></li>
+                                    <li><a href="#">home v7</a></li>
+                                    <li><a href="#">home v8</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--home end-->
+                        <!--woman-->
+                        <li id="woman" class="titles">
+                            <a href="#">woman</a>
+                            <div class="woman_subtitle_area">
+                                <ul class="woman_subtitle">
+                                    <ul class="woman_col_1 woman_cols">
+                                        <li class="woman_col_header">
+                                            <p>women</p>
+                                        </li>
+                                        <li><a href="#">dresses</a></li>
+                                        <li><a href="#">shorts</a></li>
+                                        <li><a href="#">accessories</a></li>
+                                    </ul>
+                                    <!--top rated-->
+                                    <ul class="woman_col_2 woman_cols">
+                                        <li class="woman_col_header">
+                                            <p>top rated product</p>
+                                        </li>
+                                        <li class="woman_top_rated">
+                                            <div class="top_rated_col">
+                                                <div id="product_1" class="products">
+                                                    <a href="#">
+                                                        <img src="img/D Black Jacket - Young.jpg" alt="D Black Jacket - Young.jpg">
+                                                        <span class="product_name">D Black Jacket - Young</span>
+                                                    </a>
+                                                    <div class="star">
+                                                        <ul>
+                                                            <li><i class="icofont-ui-rate-blank"></i></li>
+                                                            <li><i class="icofont-ui-rate-blank"></i></li>
+                                                            <li><i class="icofont-ui-rate-blank"></i></li>
+                                                            <li><i class="icofont-ui-rate-blank"></i></li>
+                                                            <li><i class="icofont-ui-rate-blank"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="price_box">
+                                                        <span class="fixed_price">$45</span>
+                                                    </div>
+                                                </div>
+                                                <div id="product_2" class="products">
+                                                    <a href="#">
+                                                        <img src="img/pink hat.jpg" alt="pink hat">
+                                                        <span class="product_name">pink hat</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <del>
+                                                            <span class="price_without_discount">$15</span>
+                                                        </del>
+                                                        <span class="discounted_price">$10</span>
+                                                    </div>
+                                                </div>
+                                                <div id="product_3" class="products">
+                                                    <a href="#">
+                                                        <img src="img/gray jacket.jpg" alt="gray jacket">
+                                                        <span class="product_name">gray jacket</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <span class="fixed_price">$85</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--top rated end-->
+                                    <!--sales product-->
+                                    <ul class="woman_col_3 woman_cols">
+                                        <li class="woman_col_header">
+                                            <p>sales product</p>
+                                        </li>
+                                        <li class="woman_sales_product">
+                                            <div class="sales_product_col">
+                                                <div id="product_4" class="products">
+                                                    <a href="#">
+                                                        <img src="img/Eyelash Lace Kimono.jpg" alt="Eyelash Lace Kimono">
+                                                        <span class="product_name">Eyelash Lace Kimono</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <del>
+                                                            <span class="price_without_discount">$169</span>
+                                                        </del>
+                                                        <span class="discounted_price">$155</span>
+                                                    </div>
+                                                </div>
+                                                <div id="product_5" class="products">
+                                                    <a href="#">
+                                                        <img src="img/BrandMarled Sweater.jpg" alt="BrandMarled Sweater">
+                                                        <span class="product_name">BrandMarled Sweater</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <del>
+                                                            <span class="price_without_discount">$169</span>
+                                                        </del>
+                                                        <span class="discounted_price">$155</span>
+                                                    </div>
+                                                </div>
+                                                <div id="product_6" class="products">
+                                                    <a href="#">
+                                                        <img src="img/Modern Fit Blue.jpg" alt="Modern Fit Blue">
+                                                        <span class="product_name">Modern Fit Blue</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <del>
+                                                            <span class="price_without_discount">$169</span>
+                                                        </del>
+                                                        <span class="discounted_price">$155</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--sales product end-->
+                                    <!--featured products-->
+                                    <ul class="woman_col_4 woman_cols">
+                                        <li class="woman_col_header">
+                                            <p>sales product</p>
+                                        </li>
+                                        <li class="woman_featured_products">
+                                            <div class="featured_products_col">
+                                                <div id="product_7" class="products">
+                                                    <a href="#">
+                                                        <img src="img/Floral Mock Neck Top.jpg" alt="Floral Mock Neck Top">
+                                                        <span class="product_name">Floral Mock Neck Top</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <span class="fixed_price">$99</span>
+                                                    </div>
+                                                </div>
+                                                <div id="product_8" class="products">
+                                                    <a href="#">
+                                                        <img src="img/Eyelash Lace Kimono.jpg" alt="Eyelash Lace Kimono">
+                                                        <span class="product_name">Eyelash Lace Kimono</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <del>
+                                                            <span class="price_without_discount">$169</span>
+                                                        </del>
+                                                        <span class="discounted_price">$155</span>
+                                                    </div>
+                                                </div>
+                                                <div id="product_9" class="products">
+                                                    <a href="#">
+                                                        <img src="img/BrandMarled Sweater.jpg" alt="BrandMarled Sweater">
+                                                        <span class="product_name">BrandMarled Sweater</span>
+                                                    </a>
+                                                    <div class="price_box_without_star">
+                                                        <del>
+                                                            <span class="price_without_discount">$169</span>
+                                                        </del>
+                                                        <span class="discounted_price">$155</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--featured products end-->
+                                </ul>
+                            </div>
+                        </li>
+                        <!--woman end-->
+                        <!--categories-->
+                        <li id="categories" class="titles">
+                            <a href="#">categories</a>
+                            <div class="single_sub_titles_box">
+                                <ul class="single_sub_titles categories_subtitle">
+                                    <li><a href="#">new arrivals</a></li>
+                                    <li><a href="#">woman</a></li>
+                                    <li><a href="#">best selling</a></li>
+                                    <li><a href="#">man</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--categories end-->
+                        <!--shop-->
+                        <li id="shop" class="titles">
+                            <a href="#">shop</a>
+                            <div class="shop_subtitle_area">
+                                <ul class="shop_subtitle">
+                                    <ul class="shop_col_1 shop_cols">
+                                        <img src="img/shop subtitle img.png" alt="red dress">
+                                    </ul>
+                                    <ul>
+                                        <div class="divider"></div>
+                                    </ul>
+                                    <!--product pages1-->
+                                    <ul class="shop_col_2 shop_cols">
+                                        <li class="shop_col_header">
+                                            <p>product pages</p>
+                                        </li>
+                                        <li><a href="#">product detail</a></li>
+                                        <li><a href="#">product list</a></li>
+                                        <li><a href="#">product grid</a></li>
+                                        <li><a href="#">product grid 4 columns</a></li>
+                                    </ul>
+                                    <ul>
+                                        <div class="divider"></div>
+                                    </ul>
+                                    <!--product pages1 end-->
+                                    <!--product pages2-->
+                                    <ul class="shop_col_3 shop_cols">
+                                        <li class="shop_col_header">
+                                            <p>product pages</p>
+                                        </li>
+                                        <li><a href="#">product fullwidth</a></li>
+                                        <li><a href="#">product by category</a></li>
+                                        <li><a href="#">product masonry</a></li>
+                                        <li><a href="#">product slider</a></li>
+                                    </ul>
+                                    <ul>
+                                        <div class="divider"></div>
+                                    </ul>
+                                    <!--product pages2 end-->
+                                    <!--other pages-->
+                                    <ul class="shop_col_4 shop_cols">
+                                        <li class="shop_col_header">
+                                            <p>other pages</p>
+                                        </li>
+                                        <li><a href="#">cart</a></li>
+                                        <li><a href="#">empty cart</a></li>
+                                        <li><a href="#">my account</a></li>
+                                        <li><a href="#">wish list</a></li>
+                                    </ul>
+                                    <!--other pages end-->
+                                </ul>
+                            </div>
+                        </li>
+                        <!--shop end-->
+                        <!--blog-->
+                        <li id="blog" class="titles">
+                            <a href="#">blog</a>
+                            <div class="single_sub_titles_box">
+                                <ul class="single_sub_titles blog_subtitle">
+                                    <li><a href="#">blog-list</a></li>
+                                    <li><a href="#">blog-gride</a></li>
+                                    <li><a href="#">blog-masnory</a></li>
+                                    <li><a href="#">blog-timeline</a></li>
+                                    <li><a href="#">blog-detail-slider</a></li>
+                                    <li><a href="#">blog-detail-image</a></li>
+                                    <li><a href="#">blog-detail-audio</a></li>
+                                    <li><a href="#">blog-detail-video</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--blog end-->
+                        <!--pages-->
+                        <li id="pages" class="titles">
+                            <a href="#">pages</a>
+                            <div class="single_sub_titles_box">
+                                <ul class="single_sub_titles pages_subtitle">
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">contact us</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--pages end-->
+                        <!--nav options-->
+                        <ul class="nav_options">
+                            <li class="cart">
+                                <a href="#"><i class="icofont-cart"></i></a>
+                                <div class="triangle"></div>
+                                <div class="cart_description">
+                                    <ul class="cart_area">
+                                        <p class="cart_status">your shopping bag is empty.</p>
+                                        <hr>
+                                        <div class="continue_shopping_btn">
+                                            <a href="#">
+                                                <span>go to the shop</span><i class="icofont-rounded-right"></i>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="search">
+                                <a href="#">
+                                    <i class="icofont-search-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--nav options end-->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main navbar end-->
+    </div>
+    <!--search box-->
+    <div id="search_area">
+        <div class="search_box">
+            <div class="close_mark">
+                <i class="icofont-close-line"></i>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-append">
+                    <button class="btn btn_search" type="submit">search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--search box end-->
+    <!--slider header end-->
+    <!--envelope tags-->
+    <section>
+        <div id="envelopes">
+            <div class="container">
+                <div class="row">
+                    <div id="promotions" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 envelopes_area">
+                        <div class="envelope">
+                            <div class="envelope_header_icon ">
+                                <i class="icofont-star-alt-1"></i>
+                            </div>
+                            <div class="envelope_head_divider "></div>
+                            <div class="envelope_text_area">
+                                <div class="envelope_text ">
+                                    <p class="envelope_type">weekly</p>
+                                    <h2 class="envelope_service">promotions</h2>
+                                </div>
+                            </div>
+                            <div class="envelope_bottom_icon">
+                                <i class="icofont-star-alt-1"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="free_shipping" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 envelopes_area">
+                        <div class="envelope">
+                            <div class="envelope_header_icon">
+                                <i class="icofont-long-arrow-right"></i>
+                            </div>
+                            <div class="envelope_head_divider"></div>
+                            <div class="envelope_text_area">
+                                <div class="envelope_text">
+                                    <p class="envelope_type">world wide</p>
+                                    <h2 class="envelope_service">free shipping</h2>
+                                </div>
+                            </div>
+                            <div class="envelope_bottom_icon">
+                                <i class="icofont-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="free_returns" class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 envelopes_area">
+                        <div class="envelope">
+                            <div class="envelope_header_icon">
+                                <i class="icofont-ui-reply"></i>
+                            </div>
+                            <div class="envelope_head_divider"></div>
+                            <div class="envelope_text_area">
+                                <div class="envelope_text">
+                                    <p class="envelope_type">in 30 days</p>
+                                    <h2 class="envelope_service">free returns</h2>
+                                </div>
+                            </div>
+                            <div class="envelope_bottom_icon">
+                                <i class="icofont-ui-reply"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--envelope tags end-->
+    <!--shop this looks-->
+    <div id="shop_looks">
+        <div class="shops_looks_header">
+            <h2 class="title">Shop this looks</h2>
+            <p class="caption">This is tailoring</p>
+            <div class="down_arrows">
+                <div class="first_down_arrow"></div>
+                <div class="second_down_arrow"></div>
+            </div>
+        </div>
+        <!--product for men-->
+        <div class="container-fluid product_section">
+            <div class="row product_section_row_men">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 products_slider">
+                    <div id="ps_for_men" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div id="men_p1" class="product_img_area">
+                                        <img src="img/men p1.jpg" data-alt-src="img/men p1 hover.jpg" alt="converse short">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                converse short
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <span class="fixed_cost">
+                                                $150
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="men_p2" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/men p2.jpg" data-alt-src="img/men p2 hover.jpg" alt="wool-blend peacoat">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                wool-blend peacoat
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                <span class="cost_without_discount">
+                                                    $420
+                                                </span>
+                                            </del>
+                                            <span class="discounted_cost">
+                                                $380
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="men_p3" class="product_img_area">
+                                        <img src="img/men p3.jpg" data-alt-src="img/men p3 hover.jpg" alt="superdry rookie pet">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                superdry rookie pet
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <span class="fixed_cost">
+                                                $83
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="men_p4" class="product_img_area">
+                                        <img src="img/men p4.jpg" data-alt-src="img/men p4 hover.jpg" alt="lightweight overcoat">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                lightweight overcoat
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <span class="fixed_cost">
+                                                $140
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 lookbook_img">
+                    <div class="big_bg_for_men"></div>
+                    <div class="main_pic_for_men">
+                        <div class="image_content">
+                            <h2>
+                                Lookbook for<br>Men
+                            </h2>
+                            <span>
+                                If you're unsure of the dress code,<br>
+                                wear a suit
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--product for men end-->
+
+        <!--product for women-->
+        <div class="container-fluid product_section">
+            <div class="row product_section_row_women">
+                <div class="col-lg-6 lookbook_img">
+                    <div class="big_bg_for_women"></div>
+                    <div class="main_pic_for_women">
+                        <div class="image_content">
+                            <h2>
+                                Lookbook for<br>Women
+                            </h2>
+                            <span>
+                                Girls never stop playing dress up
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 products_slider">
+                    <div id="ps_for_women" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div id="women_p1" class="product_img_area">
+                                        <img src="img/women p1.jpg" data-alt-src="img/women p1 hover.jpg" alt="D Black Jacket – Young">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                D Black Jacket – Young
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <span class="fixed_cost">
+                                                $45
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="women_p2" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/women p2.jpg" data-alt-src="img/women p2 hover.jpg" alt="Metal Bow Waist Belt">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                Metal Bow Waist Belt
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                <span class="cost_without_discount">
+                                                    $32
+                                                </span>
+                                            </del>
+                                            <span class="discounted_cost">
+                                                $29
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="women_p3" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/women p3.jpg" data-alt-src="img/women p3 hover.jpg" alt="Retro Floral Shorts">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                Retro Floral Shorts
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                <span class="cost_without_discount">
+                                                    $40
+                                                </span>
+                                            </del>
+                                            <span class="discounted_cost">
+                                                $30
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="women_p4" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/women p4.jpg" data-alt-src="img/women p4 hover.jpg" alt="Red giambattista dress">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                Red giambattista dress
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                <span class="cost_without_discount">
+                                                    $190
+                                                </span>
+                                            </del>
+                                            <span class="discounted_cost">
+                                                $180
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="women_p5" class="product_img_area">
+                                        <img src="img/women p5.jpg" data-alt-src="img/women p5 hover.jpg" alt="Sweet stripes fit dress">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                Sweet stripes fit dress
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <span class="fixed_cost">
+                                                $49
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--product for women end-->
+    </div>
+    <!--shop this looks end-->
+    <!--free shipping-->
+    <div id="free_shipping">
+        <div class="container-fluid free_shipping_area">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                    <div class="sale_up_box">
+                        <h2>sale up to</h2>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                    <div class="sale_description_box">
+                        <a href="#">
+                            <img src="img/free shipping logo saleup.png" alt="free shipping logo saleup">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+                    <div class="discount_amount_box">
+                        <h2>30% off</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--free shipping end-->
+    <!--promotions-->
+    <div id="promotions">
+        <div class="promotions_header">
+            <h2 class="title">promotions</h2>
+            <p class="caption">up to 50%</p>
+            <div class="down_arrows">
+                <div class="first_down_arrow"></div>
+                <div class="second_down_arrow"></div>
+            </div>
+        </div>
+        <!--product women with discount-->
+        <div class="container-fluid product_section">
+            <div class="row product_section_row_women_widthDC">
+                <div class="col-lg-6 lookbook_img">
+                    <div class="main_pic_for_women_with_discount">
+                        <div class="image_content_with_discount">
+                            <h2>
+                                discount 50%
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 products_slider">
+                    <div id="ps_for_women_WD" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div id="women_discount_p1" class="product_img_area">
+                                        <img src="img/women discount p1.jpg" data-alt-src="img/women discount p1 hover.jpg" alt="Floral Mock Neck Top">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                Floral Mock Neck Top
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <span class="fixed_cost">
+                                                $99
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="women_discount_p2" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/women discount p2.jpg" data-alt-src="img/women discount p2 hover.jpg" alt="Eyelash Lace Kimono">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                Eyelash Lace Kimono
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                <span class="cost_without_discount">
+                                                    $169
+                                                </span>
+                                            </del>
+                                            <span class="discounted_cost">
+                                                $155
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="women_discount_p3" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/women discount p3.jpg" data-alt-src="img/women discount p3 hover.jpg" alt="White mini skirt">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                            <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                            <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                            <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                White mini skirt
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                <span class="cost_without_discount">
+                                                    $150
+                                                </span>
+                                            </del>
+                                            <span class="discounted_cost">
+                                                $125
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--product women with discount end-->
+        <!--product men with discount-->
+        <div class="container-fluid product_section">
+            <div class="row">
+                <div class="col-lg-6 products_slider">
+                    <div id="ps_for_men_WD" class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div id="men_discount_p1" class="product_img_area">
+                                        <img src="img/men discount p1.jpg" data-alt-src="img/men discount p1 hover.jpg" alt="Modern Fit Blue">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                                    <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                                    <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                                    <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                        Modern Fit Blue
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <span class="fixed_cost">
+                                                        $86
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="men_discount_p2" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/men discount p2.jpg" data-alt-src="img/men discount p2 hover.jpg" alt="Converse Chuck White">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                                    <span class="options_name">add to wishlist</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                                    <span class="options_name">quick shop</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                                    <span class="options_name">add to cart</span>
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                        Converse Chuck White
+                                            </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                        <span class="cost_without_discount">
+                                                            $250
+                                                        </span>
+                                                    </del>
+                                            <span class="discounted_cost">
+                                                        $150
+                                                    </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div id="men_discount_p3" class="product_img_area">
+                                        <div class="product_sale_lable">
+                                            <span>sale!</span>
+                                        </div>
+                                        <img src="img/men discount p3.jpg" data-alt-src="img/men discount p3 hover.jpg" alt="Converse Short">
+                                        <ul class="product_options">
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-ui-love options_icon">
+                                                                    <span class="options_name">add to wishlist</span>
+                                                                </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-eye-alt options_icon">
+                                                                    <span class="options_name">quick shop</span>
+                                                                </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="options_box">
+                                                <ul class="options_bar_area animate__animated">
+                                                    <li class="options_bar_box">
+                                                        <i class="icofont-shopify options_icon">
+                                                                    <span class="options_name">add to cart</span>
+                                                                </i>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="product_name_box">
+                                            <a href="#">
+                                                        Converse Short
+                                                    </a>
+                                        </div>
+                                        <div class="product_cost_box">
+                                            <del>
+                                                        <span class="cost_without_discount">
+                                                            $115
+                                                        </span>
+                                                    </del>
+                                            <span class="discounted_cost">
+                                                        $95
+                                                    </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 lookbook_img">
+                    <div class="main_pic_for_men_with_discount">
+                        <div class="image_content_with_discount">
+                            <h2>
+                                discount 50%
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--product men with discount end-->
+    </div>
+    <!--promotions end-->
+    <!--our blogs-->
+    <div id="our_blogs">
+        <div class="our_blogs_header">
+            <h2 class="title">our blogs</h2>
+            <p class="caption">news about fashion trends</p>
+            <div class="down_arrows">
+                <div class="first_down_arrow"></div>
+                <div class="second_down_arrow"></div>
+            </div>
+        </div>
+        <div class="container blogs_area">
+            <div class="row">
+                <div class="col-lg-4 blog_post_box">
+                    <div class="post_img">
+                        <a href="#">
+                            <img src="img/blog-1.jpg">
+                        </a>
+                    </div>
+                    <div class="post_content">
+                        <div class="post_name">
+                            <h2>
+                                <a href="#">the truth about love</a>
+                            </h2>
+                        </div>
+                        <div class="post_particular">
+                            <i class="icofont-ui-calendar"></i>
+                            <span class="day_of_upload date_particular">27</span>
+                            <span class="month_of_upload date_particular">oct</span>
+                            <span class="year_of_upload date_particular">2015</span>
+                            <div class="post_author">
+                                by
+                                <span class="post_author_name">admin</span>
+                            </div>
+                        </div>
+                        <div class="post_description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis lorem ac massa consectetur volutpat. Nullam sodales, enim eu gravida...</p>
+                        </div>
+                        <div class="read_more_btn">
+                            <a href="#">
+                                <span>read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 blog_post_box">
+                    <div class="post_img">
+                        <a href="#">
+                            <img src="img/blog-2.jpg">
+                        </a>
+                    </div>
+                    <div class="post_content">
+                        <div class="post_name">
+                            <h2>
+                                <a href="#">8 genius beauty tips</a>
+                            </h2>
+                        </div>
+                        <div class="post_particular">
+                            <i class="icofont-ui-calendar"></i>
+                            <span class="day_of_upload date_particular">27</span>
+                            <span class="month_of_upload date_particular">oct</span>
+                            <span class="year_of_upload date_particular">2015</span>
+                            <div class="post_author">
+                                by
+                                <span class="post_author_name">admin</span>
+                            </div>
+                        </div>
+                        <div class="post_description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis lorem ac massa consectetur volutpat. Nullam sodales, enim eu gravida...</p>
+                        </div>
+                        <div class="read_more_btn">
+                            <a href="#">
+                                <span>read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 blog_post_box">
+                    <div class="post_img">
+                        <a href="#">
+                            <img src="img/blog-3.jpg">
+                        </a>
+                    </div>
+                    <div class="post_content">
+                        <div class="post_name">
+                            <h2>
+                                <a href="#">how to find some new creative</a>
+                            </h2>
+                        </div>
+                        <div class="post_particular">
+                            <i class="icofont-ui-calendar"></i>
+                            <span class="day_of_upload date_particular">27</span>
+                            <span class="month_of_upload date_particular">oct</span>
+                            <span class="year_of_upload date_particular">2015</span>
+                            <div class="post_author">
+                                by
+                                <span class="post_author_name">admin</span>
+                            </div>
+                        </div>
+                        <div class="post_description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis lorem ac massa consectetur volutpat. Nullam sodales, enim eu gravida...</p>
+                        </div>
+                        <div class="read_more_btn">
+                            <a href="#">
+                                <span>read more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--our blogs end-->
+    <!--beauty of canifa-->
+    <div id="beauty_of_canifa">
+        <div class="beauties_header">
+            <h2 class="title">beauty of canfia</h2>
+            <p class="caption">be your self -be canfia</p>
+            <div class="down_arrows">
+                <div class="first_down_arrow"></div>
+                <div class="second_down_arrow"></div>
+            </div>
+        </div>
+        <div class="container-fluid beauty_slider">
+            <div id="beauty_slider_for_woman" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="beauty_slides">
+                                <a id="beauty_slider_p1" href="#">
+                                    <img src="img/beauty slider p1.jpg">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="beauty_slides">
+                                <a id="beauty_slider_p2" href="#">
+                                    <img src="img/beauty slider p2.jpg">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="beauty_slides">
+                                <a id="beauty_slider_p3" href="#">
+                                    <img src="img/beauty slider p3.jpg">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="beauty_slides">
+                                <a id="beauty_slider_p4" href="#">
+                                    <img src="img/beauty slider p4.jpg">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="beauty_slides">
+                                <a id="beauty_slider_p5" href="#">
+                                    <img src="img/beauty slider p5.jpg">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="beauty_slides">
+                                <a id="beauty_slider_p6" href="#">
+                                    <img src="img/beauty slider p6.jpg">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="beauty_slides">
+                                <a id="beauty_slider_p7" href="#">
+                                    <img src="img/beauty slider p7.jpg">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="view_gallery_btn">
+            <a href="#">
+                <span>view gallery</span>
+            </a>
+        </div>
+    </div>
+    <!--beauty of canifa end-->
+    <!--subscribe emails-->
+    <div id="subscribe_emails">
+        <div class="container subscribe_emails_box">
+            <div class="subscribe_header">
+                <h2 class="title">
+                    subscribe emails
+                </h2>
+                <p class="caption">
+                    get latest news & update from canifa
+                </p>
+            </div>
+            <div class="subscribe_inputs">
+                <form>
+                    <input class="email_input form-control" type="email" placeholder="Enter your email here">
+                    <div class="subscribe_btn">
+                        <a href="#">
+                            <span>subscribe</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--subscribe emails end-->
+    <!--our clients-->
+    <div id="our_clients">
+        <div class="container-fluid clients_slider">
+            <div id="clients_slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="img/client-1.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/client-2.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/client-3.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/client-4.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/client-5.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/client-6.png">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/client-7.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--our clients end-->
+    <!--footer-->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="widget text-xl-left text-lg-left text-md-center text-sm-center">
+                        <h4 class="widget_title">contact us</h4>
+                        <div class="widget_text">
+                            <ul>
+                                <li>canifa shop</li>
+                                <li>54/29 west 21st street, new york, USA</li>
+                                <li><a href="#">email@domain.com</a></li>
+                                <li><a href="#">http://canifa.com</a></li>
+                                <li>tell: 1-100-294-6888</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget text-xl-left text-lg-left text-md-center text-sm-center">
+                        <h4 class="widget_title">quick links</h4>
+                        <div class="widget_text">
+                            <ul>
+                                <li><a href="#">cart</a></li>
+                                <li><a href="#">checkout</a></li>
+                                <li><a href="#">my account</a></li>
+                                <li><a href="#">wishlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget text-xl-left text-lg-left text-md-center text-sm-center">
+                        <h4 class="widget_title">customer care</h4>
+                        <div class="widget_text">
+                            <ul>
+                                <li><a href="#">customer service</a></li>
+                                <li><a href="#">track my order</a></li>
+                                <li><a href="#">shipping and delivery</a></li>
+                                <li><a href="#">contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget text-xl-left text-lg-left text-md-center text-sm-center">
+                        <h4 class="widget_title">newsletter sign up</h4>
+                        <form>
+                            <label for="footer_mail_input">subscribe to stay get update from canifa</label>
+                            <input id="footer_mail_input" type="email" placeholder="email">
+                            <button class="send_btn">
+                                <i class="icofont-long-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="follow_icon">
+                <ul>
+                    <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                    <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                    <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                    <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                    <li><a href="#"><i class="icofont-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+
+    <!--bottom bar content-->
+    <div id="bottom_bar_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="warning_content">
+
+                        © 2015 Canifa HTML. Created by TK-Themes
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="payment_gateways">
+                        <ul>
+                            <li><a href="#"><i class="icofont-visa-alt"></i></a></li>
+                            <li><a href="#"><i class="icofont-discover-alt"></i></a></li>
+                            <li>
+                                <a href="#"><i class="icofont-mastercard-alt"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icofont-american-express-alt"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icofont-paypal-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom bar content end-->
+</body>
+
+</html>

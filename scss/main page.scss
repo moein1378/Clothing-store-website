@@ -1,0 +1,915 @@
+@import "includes/_functions.scss";
+@import "includes/_navigation.scss";
+@import "includes/_footer.scss";
+@import "includes/_preloader.scss";
+//quantifications
+.slider_style {
+    &:hover .splide__arrow {
+        opacity: 0.7;
+    }
+    .splide__arrow {
+        width: 39px;
+        height: 39px;
+        border-radius: 0;
+        border: 3px solid rgb(139, 139, 139);
+        background-color: $white;
+        transition: all 0.5s;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .splide__slide {
+        width: 265px;
+        margin: 25px 0 25px 0 !important;
+    }
+}
+
+.kenburns-top {
+    -webkit-animation: kenburns-top 5s ease-out both;
+    animation: kenburns-top 5s ease-out both;
+}
+
+@-webkit-keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+}
+
+@keyframes kenburns-top {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+}
+
+//quantifications end
+//slider header
+#slider_header {
+    .fade_zoom_animate_slider {
+        position: absolute;
+        .carousel-inner {
+            @media only screen and (min-width: 1760px) {
+                width: 98.7vw !important;
+            }
+            .slider_caption1 {
+                margin-bottom: 8%;
+                .little_header {
+                    text-transform: capitalize;
+                }
+                .main_header {
+                    text-transform: uppercase;
+                    border-bottom: 1px solid $white;
+                    border-top: 1px solid $white;
+                    width: fit-content;
+                    width: -moz-fit-content;
+                    margin: auto;
+                    font-weight: bold;
+                    font-size: 50px;
+                    padding: 5px 0;
+                }
+                .view_btn {
+                    @include slider_btns_style($lightred, 25%, block, transparent);
+                }
+            }
+            .slider_caption2 {
+                margin-bottom: 8%;
+                .little_header {
+                    text-transform: uppercase;
+                    width: fit-content;
+                    margin: auto;
+                    width: -moz-fit-content;
+                    border-bottom: 1px solid $white;
+                    border-top: 1px solid $white;
+                    padding: 5px 0;
+                }
+                .main_header {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 50px;
+                }
+                .caption_offer {
+                    font-weight: bold;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    &_amount {
+                        border: 2px solid $lightred;
+                        border-radius: 50%;
+                        padding: 10px;
+                        margin-left: 10px;
+                        font-size: 19px;
+                    }
+                }
+                .learn_more_btn {
+                    @include slider_btns_style($lightred, 20%, inline-block, transparent);
+                }
+                .shop_now_btn {
+                    @include slider_btns_style(transparent, 20%, inline-block, $lightred);
+                }
+            }
+            .slider_caption3 {
+                margin-bottom: 8%;
+                .little_header {
+                    text-transform: capitalize;
+                    border-bottom: 1px solid $white;
+                    padding-bottom: 5px;
+                    width: fit-content;
+                    width: -moz-fit-content;
+                    margin: auto;
+                }
+                .main_header {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 50px;
+                    padding: 5px 0;
+                }
+                .shop_now_btn {
+                    @include slider_btns_style(transparent, 25%, inline-block, $lightred);
+                }
+            }
+        }
+        img {
+            height: 700px;
+        }
+    }
+}
+
+//slider header end
+//envelope tags
+#envelopes {
+    margin: 40% 0 10% 0;
+    @media screen and (max-width: 1200px) {
+        margin-top: 45em;
+    }
+    .envelopes_area {
+        height: fit-content;
+        height: -moz-fit-content;
+        .envelope_hover {
+            box-shadow: 10px 10px 0 0 $lightred !important;
+            border: 2px solid $lightred !important;
+        }
+        .envelope {
+            text-align: -webkit-center;
+            text-align: -moz-center;
+            border: 2px solid rgb(235, 235, 235);
+            border-radius: 1px;
+            padding: 10px;
+            height: 200px;
+            transition: all 0.5s;
+            .envelope_header_icon_hover {
+                opacity: 0;
+            }
+            .envelope_header_icon {
+                transition: all 0.5s;
+                i {
+                    font-size: 40px;
+                    color: rgb(168, 168, 168);
+                }
+            }
+            .envelope_head_divider_hover {
+                opacity: 0;
+            }
+            .envelope_head_divider {
+                background-color: rgb(235, 235, 235);
+                width: 70%;
+                height: 160px;
+                margin-top: -30px;
+                clip-path: polygon(50% 33%, 100% 0, 50% 29%, 0 0);
+                transition: all 0.5s;
+            }
+            .envelope_text_hover {
+                position: relative;
+                z-index: 10;
+            }
+            .envelope_text_area {
+                position: relative;
+                .envelope_text {
+                    margin-top: -100px;
+                    transition: all 0.5s;
+                    .envelope_type {
+                        text-transform: capitalize;
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: rgb(168, 168, 168);
+                    }
+                    .envelope_service {
+                        text-transform: capitalize;
+                        font-family: playfair;
+                        color: $darkblack;
+                    }
+                }
+            }
+        }
+        .envelope_bottom_icon {
+            display: none;
+            z-index: -1;
+            position: relative;
+            background-color: $lightred;
+            clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+            height: 48%;
+            width: 65%;
+            padding: 20px;
+            margin-top: -80px;
+            i {
+                font-size: 40px;
+                color: $white;
+            }
+        }
+    }
+}
+
+//envelope tags end
+//shop this looks
+#shop_looks,
+#promotions,
+#our_blogs,
+#beauty_of_canifa,
+#subscribe_emails {
+    .shops_looks_header,
+    .promotions_header,
+    .our_blogs_header,
+    .beauties_header,
+    .subscribe_header {
+        text-align: center;
+        .title {
+            color: $darkblack;
+            text-transform: capitalize;
+            font: {
+                style: italic;
+                family: playfair;
+                size: 36px;
+            }
+        }
+        .caption {
+            font-size: 18px;
+            color: $lightgray;
+            text-transform: capitalize;
+        }
+        .down_arrows {
+            text-align: -webkit-center;
+            text-align: -moz-center;
+            height: 6em;
+            .first_down_arrow {
+                background-color: #bdbdbd;
+                width: 6%;
+                height: 70px;
+                clip-path: polygon(50% 39%, 100% 0, 50% 30%, 0 0);
+            }
+            .second_down_arrow {
+                background-color: $lightred;
+                width: 9%;
+                height: 160px;
+                clip-path: polygon(50% 29%, 100% 0, 50% 25%, 0 0);
+                position: relative;
+                margin-top: -75px;
+                z-index: 0;
+            }
+        }
+    }
+    .product_section {
+        margin-top: 5%;
+        .product_section_row_men,
+        .product_section_row_women_widthDC {
+            @media only screen and (max-width: 991px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+        .products_slider {
+            @extend .slider_style;
+            border-top: 1px solid rgb(209, 209, 209);
+            border-bottom: 1px solid rgb(209, 209, 209);
+            .product_img_area {
+                padding: 20px;
+                text-align: center;
+                text-transform: capitalize;
+                box-shadow: none;
+                transition: all 0.5s;
+                &:hover {
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+                    transform: scale(1.02);
+                }
+                img {
+                    width: 100% !important;
+                    height: auto;
+                }
+                .product_sale_lable {
+                    color: $white;
+                    background-color: $lightred;
+                    width: 45px;
+                    height: 45px;
+                    padding-top: 12px;
+                    border-radius: 50%;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    z-index: 5;
+                    margin-left: 12px;
+                    margin-top: 10px;
+                    position: absolute;
+                }
+                .product_options {
+                    text-align: left;
+                    margin-top: -115px;
+                    margin-bottom: 10px;
+                    overflow: hidden;
+                    .options_box {
+                        margin-bottom: 5px;
+                        height: 35px;
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            .options_bar_area {
+                                z-index: -1;
+                                .options_bar_box {
+                                    background-color: rgba(139, 139, 139, 0.801) !important;
+                                    &:hover {
+                                        background-color: rgba(243, 115, 89, 0.918) !important;
+                                    }
+                                }
+                            }
+                        }
+                        .options_bar_area {
+                            transition: all 0.3s;
+                            display: none;
+                            .options_bar_box {
+                                background-color: rgba(243, 115, 89, 0.918);
+                                color: $white;
+                                width: 35px;
+                                height: 35px;
+                                text-align: center;
+                                font-size: 19px;
+                                transition: width 0.1s;
+                                &:hover {
+                                    cursor: pointer;
+                                    width: 170px;
+                                    .options_icon .options_name {
+                                        display: inline-block;
+                                    }
+                                }
+                                .options_icon {
+                                    float: left;
+                                    font-size: 20px;
+                                    padding: 7.5px;
+                                    .options_name {
+                                        font-size: 14px;
+                                        text-transform: uppercase;
+                                        font-weight: 600;
+                                        font-family: sans-serif;
+                                        padding-left: 10px;
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .product_name_box {
+                    a {
+                        font-family: "Open Sans", sans-serif;
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: $lightgray;
+                        font-weight: bold;
+                        transition: all 0.3s;
+                        &:hover {
+                            color: $lightred;
+                        }
+                    }
+                }
+                .product_cost_box {
+                    font-family: playfair;
+                    .fixed_cost,
+                    .discounted_cost {
+                        font-size: 24px;
+                        color: $lightred;
+                    }
+                    .cost_without_discount {
+                        font-size: 18px;
+                        padding-right: 10px;
+                        color: $lightgray;
+                    }
+                }
+            }
+        }
+        .lookbook_img {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            padding: 0 2em;
+            @media only screen and (max-width: 991px) {
+                margin: 100px 0;
+            }
+            &:hover .main_pic_for_men::before,
+            &:hover .main_pic_for_men::after,
+            &:hover .main_pic_for_women::before,
+            &:hover .main_pic_for_women::after {
+                opacity: 1;
+                transform: scale(1);
+            }
+            .big_bg_for_men {
+                height: auto;
+                width: 100%;
+                top: 50px;
+                bottom: 50px;
+                position: absolute;
+                left: 0;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                background-position: center;
+                background-position-x: 38px !important;
+                opacity: 0.3;
+                background: url('../img/lookbook-men-1.jpg');
+                @media only screen and (max-width: 991px) {
+                    left: -19px;
+                }
+            }
+            .main_pic_for_men {
+                width: 71%;
+                margin-right: 10%;
+                //height: -webkit-fill-available;
+                height: 100%;
+                margin-left: 10%;
+                background-size: cover !important;
+                background-position: center;
+                z-index: 0;
+                position: absolute;
+                top: 0;
+                background: url('../img/lookbook-men-1.jpg');
+                @extend .img_hover;
+                @media only screen and (max-width: 991px) {
+                    position: sticky;
+                    height: 675px;
+                    margin: auto;
+                }
+            }
+            .image_content {
+                margin-top: 257px;
+                margin-left: 10%;
+                color: $white;
+                font-style: italic;
+                text-transform: capitalize;
+                @media only screen and (max-width: 991px) {
+                    margin-top: 0;
+                    padding-top: 350px;
+                }
+                h2 {
+                    font-size: 57px;
+                    font-family: playfair;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-size: 22px;
+                    font-family: "Open Sans", sans-serif;
+                }
+            }
+            .big_bg_for_women {
+                @extend .big_bg_for_men;
+                background: url('../img/lookbook-women-1.jpg') !important;
+                width: 95% !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                @media only screen and (max-width: 991px) {
+                    left: 25px;
+                }
+            }
+            .main_pic_for_women {
+                @extend .main_pic_for_men;
+                background: url('../img/lookbook-women-1.jpg') !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                background-position: center !important;
+                .image_content {
+                    text-align: right;
+                    margin-right: 9%;
+                }
+            }
+            .main_pic_for_women_with_discount {
+                @extend .main_pic_for_men;
+                background: url('../img/lookbook-women-with-discount.jpg') !important;
+                width: 85%;
+                margin-left: 0;
+                height: 100% !important;
+                background-position: center;
+                background-repeat: no-repeat !important;
+                background-size: cover!important;
+                @media only screen and (max-width: 991px) {
+                    position: sticky;
+                    height: 657px !important;
+                    margin: auto;
+                }
+                .image_content_with_discount {
+                    @extend .image_content;
+                    border-top: 1px solid $waterwhite;
+                    border-bottom: 1px solid $waterwhite;
+                    text-align: left !important;
+                    width: fit-content;
+                    width: -moz-fit-content;
+                    margin-top: 280px;
+                    margin-left: 10%;
+                    padding: 25px 0 25px 0;
+                    @media only screen and (max-width: 991px) {
+                        margin-top: 0;
+                        padding-top: 50%;
+                    }
+                    h2 {
+                        margin: 0;
+                        font-size: 55px;
+                        font-family: playfair;
+                    }
+                }
+            }
+            .main_pic_for_men_with_discount {
+                @extend .main_pic_for_women_with_discount;
+                background: url('../img/lookbook-men-with-discount.jpg') !important;
+                background-size: cover !important;
+                width: 90%;
+                .image_content_with_discount {
+                    // @extend .image_content;
+                    // margin-left: 35% !important;
+                    // margin-top: 290px !important;
+                    // @media only screen and (max-width: 991px) {
+                    //     margin-top: 0 !important;
+                    //     margin-left: 55% !important;
+                    // }
+                    @extend .image_content;
+                    border-top: 1px solid $waterwhite;
+                    border-bottom: 1px solid $waterwhite;
+                    text-align: left !important;
+                    width: fit-content;
+                    width: -moz-fit-content;
+                    margin-top: 280px;
+                    margin-left: 10%;
+                    padding: 25px 0 25px 0;
+                    @media only screen and (max-width: 991px) {
+                        margin-top: 0;
+                        padding-top: 50%;
+                    }
+                    h2 {
+                        margin: 0;
+                        font-size: 50px;
+                        font-family: playfair;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//shop this looks end
+//free shipping
+#free_shipping {
+    margin-bottom: 10%;
+    @media only screen and (max-width: 991px) {
+        margin-top: 10%;
+    }
+    .free_shipping_area {
+        background: url("../img/free\ shipping\ section\ bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 10%;
+        height: 45vh;
+        @media only screen and (max-width: 991px) {
+            height: auto;
+            padding: 10% 0;
+        }
+        .sale_up_box,
+        .discount_amount_box {
+            font-family: playfair;
+            text-align: center;
+            font-size: 35px;
+            text-transform: uppercase;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+            margin-top: 27.5%;
+            color: $darkblack;
+            @media only screen and (max-width: 991px) {
+                margin: 10% 0;
+            }
+            h2 {
+                margin: 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 30px;
+                    //left: 100px;
+                    width: 250px;
+                    height: 1px;
+                    font-style: italic;
+                    background-color: $lightred;
+                    transform: rotate( -45deg);
+                    z-index: -1;
+                }
+            }
+        }
+        .sale_description_box {
+            width: fit-content;
+            width: -moz-fit-content;
+            margin: auto;
+            a {
+                &:hover img {
+                    margin-top: -50px;
+                }
+                img {
+                    transition: all 0.3s;
+                    margin-top: -45px;
+                }
+            }
+        }
+    }
+}
+
+//free shipping end
+//our blogs
+#our_blogs {
+    background: url('../img/our\ blogs\ bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .blogs_area {
+        .blog_post_box {
+            margin-bottom: 10%;
+            &:hover .post_img a::before {
+                transform: scale(1, 1);
+                height: 100%;
+                top: 0;
+            }
+            &:hover .post_img a::after {
+                top: 45%;
+                opacity: 1;
+                visibility: visible;
+            }
+            &:hover .post_img a img {
+                transform: scale(1.1);
+            }
+            .post_img {
+                position: relative;
+                overflow: hidden;
+                a {
+                    background-color: transparent;
+                    text-decoration: none;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 0;
+                        left: 0;
+                        top: 50%;
+                        transform: scale(0, 0);
+                        z-index: 1;
+                        background: rgba(0, 0, 0, .3);
+                        transition: all .3s ease-out 0s;
+                    }
+                    &::after {
+                        content: "\efe3";
+                        font-family: icofont;
+                        font-size: 25px;
+                        position: absolute;
+                        color: #fff;
+                        filter: alpha(opacity=0);
+                        top: 40%;
+                        left: 50%;
+                        visibility: hidden;
+                        opacity: 0;
+                        z-index: 2;
+                        transform: translate(-50%, 0);
+                        transition: all .4s ease-out 0s;
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                        transform: scale(1);
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+            .post_content {
+                padding: 24px 0 25px 25px;
+                background-color: $white;
+                .post_name {
+                    h2 a {
+                        text-decoration: none;
+                        text-transform: capitalize;
+                        color: $darkblack;
+                        transition: all 0.3s;
+                        font-size: 20px;
+                        &:hover {
+                            color: $lightred;
+                        }
+                    }
+                }
+                .post_particular {
+                    color: rgb(168, 168, 168);
+                    font-size: 17px;
+                    .post_author {
+                        display: inline-block;
+                    }
+                }
+                .read_more_btn {
+                    @extend .btn_style;
+                    padding: 8px !important;
+                    width: -moz-fit-content;
+                    border: 2px solid $lightred;
+                    &::before {
+                        background-color: $white !important;
+                    }
+                    a {
+                        background-color: transparent !important;
+                        font-weight: 700;
+                        font-size: 17px;
+                        transition: all 0.4s;
+                        text-decoration: none !important;
+                        color: $lightgray;
+                        span {
+                            z-index: 1000;
+                            position: relative;
+                            text-transform: uppercase;
+                            padding: 0px 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//our blogs end
+//beauty of canifa
+#beauty_of_canifa {
+    .beauty_slider {
+        @extend .slider_style;
+        a {
+            z-index: 0;
+            width: fit-content;
+            float: left;
+            margin: 30px 0;
+            padding: 11px;
+            transition: all .5s ease-in-out;
+            @extend .img_hover;
+            &:hover {
+                z-index: 1;
+                padding: 11px;
+                transform: scale(1.08);
+                box-shadow: 1px 1px 10px 0 $lightgray;
+                background-color: $white;
+                &::before,
+                &::after {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            img {
+                transition: all 0.3s;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .view_gallery_btn {
+        @extend .btn_style;
+        border: 2px solid $lightred;
+        width: -moz-fit-content;
+        margin: 0 auto;
+        padding: 10px;
+        &::before {
+            background-color: $white !important;
+        }
+        a {
+            background-color: transparent !important;
+            font-weight: 700;
+            font-size: 17px;
+            transition: all 0.4s;
+            text-decoration: none !important;
+            color: $lightgray;
+            span {
+                z-index: 1000;
+                position: relative;
+                text-transform: uppercase;
+                padding: 0px 35px;
+            }
+        }
+    }
+}
+
+//beauty of canifa end
+//subscribe emails
+#subscribe_emails {
+    margin-top: 100px;
+    .subscribe_emails_box {
+        border: 2px dashed rgb(218, 218, 218);
+        padding-bottom: 100px;
+        .subscribe_header {
+            margin-top: -28px;
+            width: fit-content;
+            width: -moz-fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            background: $white;
+            h2 {
+                margin: 0;
+                &::before,
+                &::after {
+                    content: '';
+                    background: url('../img/subscribe\ title\ icon.png') center center no-repeat;
+                    width: 38px;
+                    height: 10px;
+                    margin: 0 15px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .subscribe_inputs {
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 50px;
+            width: 80%;
+            .email_input {
+                width: 65%;
+                height: 45px;
+                border: 2px solid rgb(218, 218, 218);
+                border-radius: 0;
+                padding: 5px;
+                display: inline-block;
+                &:focus {
+                    border: 2px solid $lightred;
+                    border-radius: 0%;
+                    box-shadow: none;
+                }
+            }
+            .subscribe_btn {
+                @extend .btn_style;
+                border: 2px solid $lightred;
+                margin: 0 auto;
+                width: -moz-fit-content;
+                padding: 7px;
+                display: inline-block;
+                border-radius: 0;
+                &::before {
+                    background-color: $white !important;
+                }
+                a {
+                    background-color: transparent !important;
+                    font-weight: 700;
+                    font-size: 17px;
+                    transition: all 0.4s;
+                    text-decoration: none !important;
+                    color: $lightgray;
+                    span {
+                        z-index: 1000;
+                        position: relative;
+                        text-transform: uppercase;
+                        padding: 0px 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//subscribe emails end
+//our clients
+#our_clients {
+    background: url('../img/clients\ brand\ bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 40px;
+    .clients_slider {
+        cursor: ew-resize;
+        @extend .slider_style;
+        &:hover .splide__arrow {
+            opacity: 1;
+        }
+        .splide__arrow {
+            border: none !important;
+            svg {
+                transition: all 0.3s;
+            }
+            &:hover {
+                background-color: $lightred !important;
+                svg {
+                    fill: $white;
+                }
+            }
+        }
+    }
+}
+
+//our clients end

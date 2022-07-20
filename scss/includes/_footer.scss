@@ -1,0 +1,130 @@
+@import "_functions.scss";
+//footer
+#footer {
+    background: url('../img/footer\ bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .widget {
+        &_title {
+            color: $white;
+            font-family: playfair;
+            text-transform: capitalize;
+            font-size: 26px;
+            @media screen and (max-width: 1200px) and (min-width: 992px) {
+                font-size: 24px;
+            }
+        }
+        &_text,
+        &_text ul li a {
+            color: rgba(207, 207, 207, 0.72);
+            text-transform: capitalize;
+            font-size: 15px;
+            line-height: 3;
+            text-decoration: none;
+        }
+        form {
+            @media only screen and (max-width: 991px) {
+                margin-bottom: 30px;
+            }
+            label {
+                color: rgba(207, 207, 207, 0.72);
+                text-transform: capitalize;
+                font-size: 15px;
+                @media only screen and (max-width: 991px) {
+                    margin-right: 30px;
+                }
+            }
+            input {
+                height: 40px;
+                width: 202px;
+                border: 2px solid $white;
+                vertical-align: top;
+                @media screen and (max-width: 1200px) and (min-width: 992px) {
+                    width: 162px;
+                }
+            }
+            .send_btn {
+                background-color: rgba(138, 138, 138, 0.9);
+                height: 40px;
+                border: none;
+                width: 48px;
+                margin-left: -5px;
+                color: $white;
+                font-size: 30px;
+                transition: all 0.5s;
+                &:hover {
+                    background-color: $lightred;
+                }
+            }
+            .send_btn:focus,
+            input:focus {
+                outline: none;
+            }
+        }
+    }
+    .follow_icon {
+        width: fit-content;
+        width: -moz-fit-content;
+        margin: auto;
+        padding-bottom: 50px;
+        ul li {
+            display: inline;
+            font-size: 28px;
+            border: 2px solid rgba(255, 255, 255, 0);
+            padding: 10px 15px;
+            border-radius: 50%;
+            transition: all 0.3s;
+            a {
+                text-decoration: none;
+            }
+            i {
+                color: rgba(207, 207, 207, 0.72);
+                transition: all 0.3s;
+            }
+            &:hover {
+                border: 2px solid $lightred;
+                cursor: pointer;
+                i {
+                    color: $lightred;
+                }
+            }
+        }
+    }
+}
+
+//footer end
+//bottom bar content
+#bottom_bar_content {
+    .warning_content {
+        color: rgba(138, 138, 138, 0.9);
+        padding: 45px;
+        @media only screen and (max-width: 991px) {
+            width: fit-content;
+            margin: auto;
+        }
+    }
+    .payment_gateways {
+        float: right;
+        ul {
+            @media only screen and (max-width: 991px) {
+                letter-spacing: 22px;
+            }
+            li {
+                font-size: 65px;
+                display: inline;
+                margin: 0 10px;
+                @media screen and (max-width: 1200px) and (min-width: 992px) {
+                    font-size: 61px;
+                }
+                a {
+                    text-decoration: none;
+                }
+                i {
+                    color: rgba(138, 138, 138, 0.9);
+                }
+            }
+        }
+    }
+}
+
+//bottom bar content end
